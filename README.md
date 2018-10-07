@@ -1,3 +1,5 @@
+###### 注：python版本2.7
+
 [python爬虫系列文章](https://mp.weixin.qq.com/s/BUZhmh-3qIe2HCpZrY4Zig)
 
 - Python爬虫学前普及
