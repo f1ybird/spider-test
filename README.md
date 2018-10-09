@@ -9,3 +9,4 @@
 - 把爬取的猪八戒数据插入到execl中
 - Python爬虫：学习Selenium并使用Selenium模拟登录知乎
 - Python爬虫：动态爬取QQ说说并生成词云，分析朋友状况
+- 爬取冯大辉老师的微博
