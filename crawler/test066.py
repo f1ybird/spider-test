@@ -1,7 +1,6 @@
 # !/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import jieba
@@ -15,8 +14,8 @@ import jieba
 
 
 # 生成词云
-def create_word_cloud(filename):
-    text = open("{}.txt".format(filename)).read()
+def create_word_cloud(in_filename, out_filename):
+    text = open("{}".format(in_filename)).read()
     # 结巴分词
     wordlist = jieba.cut(text, cut_all=True)
     wl = " ".join(wordlist)
@@ -42,8 +41,8 @@ def create_word_cloud(filename):
     plt.imshow(myword)
     plt.axis("off")
     plt.show()
-    wc.to_file('qq_word_cloud.png')  # 把词云保存下
+    wc.to_file(out_filename)  # 把词云保存下
 
 
 if __name__ == '__main__':
-    create_word_cloud('qq_word')
+    create_word_cloud('qq_word.txt', 'qq_word_cloud.png')

@@ -18,3 +18,8 @@ QQ_FRIEND = ''
 QQ_USERNAME = ''
 # 你的QQ密码
 QQ_PASSWORD = ''
+
+# 微博
+WEIBO_USERNAME = ''
+WEIBO_PASSWORD = ''
+
