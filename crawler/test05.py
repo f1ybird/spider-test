@@ -16,7 +16,7 @@ import config
 # 知乎的用户名和密码
 
 # ，获取浏览器的驱动，这里需要提前给firefox指定环境变量，如果没有指定则需要指定路径
-driver = webdriver.Firefox(executable_path='F:\developer\python\geckodriver-v0.23.0-win64\geckodriver.exe')
+driver = webdriver.Firefox(executable_path=config.FOXFIRE_DRIVER)
 
 # 窗口最大化
 driver.maximize_window()
@@ -29,9 +29,9 @@ driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[2]
 
 # 给输入框赋值
 driver.find_element_by_xpath(
-    '//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[1]/div[2]/div[1]/input').send_keys(config.USERNAME)
+    '//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[1]/div[2]/div[1]/input').send_keys(config.ZH_USERNAME)
 driver.find_element_by_xpath(
-    '//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[2]/div/div[1]/input').send_keys(config.PASSWORD)
+    '//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[2]/div/div[1]/input').send_keys(config.ZH_PASSWORD)
 
 # 模拟点击事件
 driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/button').click()
