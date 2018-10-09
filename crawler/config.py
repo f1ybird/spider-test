@@ -5,5 +5,5 @@
     常用配置
 '''
 
-USERNAME = "kevin_love_it@163.com"
-PASSWORD = "flzx6366-ZKrd.."
+USERNAME = ""
+PASSWORD = ""
