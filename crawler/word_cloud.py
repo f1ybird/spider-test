@@ -45,4 +45,4 @@ def create_word_cloud(in_filename, out_filename):
 
 
 if __name__ == '__main__':
-    create_word_cloud('qq_word.txt', 'qq_word_cloud.png')
+    create_word_cloud('yuan.txt', 'yuan.png')

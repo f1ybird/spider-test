@@ -5,7 +5,7 @@
 import time
 from selenium import webdriver
 from lxml import etree
-from test066 import create_word_cloud
+from word_cloud import create_word_cloud
 import sys
 import config
 
